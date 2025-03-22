@@ -1,0 +1,93 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    margin-bottom: 2em;
+    font-size: 1.1em;
+  }
+  
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  
+  .link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.7em 1.2em;
+    background: #f0f0f5;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: fit-content;
+    cursor: pointer;
+  }
+  
+  .link-item:hover {
+    background: #e0e0f0;
+  }
+  
+  .link-item img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  .link-item i {
+    font-size: 1.4em;
+  }
+  
+  /* モバイル調整（任意） */
+  @media (max-width: 480px) {
+    .container {
+      margin: 50px 1em;
+      padding: 1.5em;
+    }
+  }
+  
+/* 🌙 ダークテーマ対応 */
+@media (prefers-color-scheme: dark) {
+    body {
+      background: #1e1e24;
+      color: #eee;
+    }
+  
+    .container {
+      background: #2c2c34;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+  
+    .link-item {
+      background: #3a3a48;
+      color: #eee;
+    }
+  
+    .link-item:hover {
+      background: #505065;
+    }
+  }
