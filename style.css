@@ -92,24 +92,3 @@ body {
     }
   }
   
-/* すべての note アイコンを初期状態では非表示にする */
-.note-icon {
-  display: none;
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
-
-/* ライトテーマ用の note アイコンを表示 */
-@media (prefers-color-scheme: light) {
-  .note-icon.light {
-    display: inline;
-  }
-}
-
-/* ダークテーマ用の note アイコンを表示 */
-@media (prefers-color-scheme: dark) {
-  .note-icon.dark {
-    display: inline;
-  }
-}
