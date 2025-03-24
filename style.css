@@ -91,3 +91,19 @@ body {
       background: #505065;
     }
   }
+  
+/* 通常（ライトテーマ）：note.svgを表示 */
+.note-dark {
+  display: none;
+}
+
+/* ダークテーマ：note_dark.svgを表示し、note.svgを隠す */
+@media (prefers-color-scheme: dark) {
+  .note-light {
+    display: none;
+  }
+
+  .note-dark {
+    display: inline;
+  }
+}
