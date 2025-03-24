@@ -92,18 +92,24 @@ body {
     }
   }
   
-/* 通常（ライトテーマ）：note.svgを表示 */
-.note-dark {
+/* すべての note アイコンを初期状態では非表示にしておく */
+.note-icon {
   display: none;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
-/* ダークテーマ：note_dark.svgを表示し、note.svgを隠す */
-@media (prefers-color-scheme: dark) {
-  .note-light {
-    display: none;
+/* ライトテーマ用の note アイコンを表示 */
+@media (prefers-color-scheme: light) {
+  .note-icon.light {
+    display: inline;
   }
+}
 
-  .note-dark {
+/* ダークテーマ用の note アイコンを表示 */
+@media (prefers-color-scheme: dark) {
+  .note-icon.dark {
     display: inline;
   }
 }
